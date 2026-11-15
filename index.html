@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<style>body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
+<title>Main мужской салон</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Prata&family=Inter:wght@400;600&display=swap">
+<style>
+/* Layout: спокойный «клубный» салон, глубокий сине-зелёный, редакционная сетка */
+:root{--bg:#f3f4f2;--panel:#ffffff;--fg:#17221f;--muted:#5b6763;--accent:#1f4d44;--line:#d7dcd9;
+--display:"Prata",Georgia,serif;--body:"Inter",system-ui,sans-serif}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#111816;--panel:#18211e;--fg:#e7ece9;--muted:#9aa8a3;--accent:#7fc0b0;--line:#2a3633;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#111816;--panel:#18211e;--fg:#e7ece9;--muted:#9aa8a3;--accent:#7fc0b0;--line:#2a3633;color-scheme:dark}
+body{background:var(--bg);color:var(--fg);font-family:var(--body);font-size:16px;line-height:1.6}
+.w{max-width:1040px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+.note{color:var(--muted);font-size:13px;text-align:center;padding-block:6px;border-bottom:1px solid var(--line)}
+header .w{display:flex;justify-content:space-between;align-items:center;padding-block:22px;gap:12px;flex-wrap:wrap}
+.logo{font-family:var(--display);font-size:28px;letter-spacing:.08em}
+nav{display:flex;gap:22px;font-size:14px;color:var(--muted)}
+.hero .w{padding-block:56px 72px;display:grid;grid-template-columns:repeat(12,1fr);gap:20px}
+.hero h1{grid-column:1/9;font-family:var(--display);font-weight:400;font-size:clamp(34px,5.5vw,62px);line-height:1.1;margin:0;text-wrap:balance}
+.hero .side{grid-column:9/13;align-self:end;display:grid;gap:18px}
+@media (max-width:760px){.hero h1,.hero .side{grid-column:1/-1}}
+.side p{margin:0;color:var(--muted)}
+.btn{display:inline-block;background:var(--accent);color:var(--bg);padding:13px 22px;text-decoration:none;font-weight:600;border-radius:999px;justify-self:start}
+.btn:focus-visible{outline:2px solid var(--fg);outline-offset:3px}
+section .w{padding-block:56px;border-top:1px solid var(--line)}
+.sh{display:flex;justify-content:space-between;align-items:baseline;gap:16px;flex-wrap:wrap;margin-bottom:28px}
+h2{font-family:var(--display);font-weight:400;font-size:30px;margin:0}
+.sh small{color:var(--muted);text-transform:uppercase;letter-spacing:.14em;font-size:12px}
+.svc{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px}
+.s{background:var(--panel);border:1px solid var(--line);padding:24px;display:grid;gap:8px}
+.s b{font-size:18px;font-weight:600}.s p{margin:0;color:var(--muted);font-size:15px}
+.s span{color:var(--accent);font-weight:600;font-variant-numeric:tabular-nums}
+.quote{font-family:var(--display);font-size:clamp(22px,3vw,30px);line-height:1.35;max-width:760px;margin:0}
+.quote+p{color:var(--muted);margin:12px 0 0}
+footer .w{padding-block:32px;border-top:1px solid var(--line);color:var(--muted);font-size:14px;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+</style>
+<div class="note">Концепт сайта для салона Main. Цены и тексты примерные</div>
+<header><div class="w"><div class="logo">MAIN</div><nav><span>Услуги</span><span>Мастера</span><span>Контакты</span></nav></div></header>
+<div class="hero"><div class="w">
+<h1>Мужской салон, куда приходят не только за стрижкой</h1>
+<div class="side"><p>Стрижки, борода, уход за лицом и руками. Один мастер ведёт вас от первой записи.</p><a class="btn" href="https://t.me/mainsalon">Записаться в Telegram</a></div>
+</div></div>
+<section><div class="w"><div class="sh"><h2>Услуги</h2><small>цены от</small></div>
+<div class="svc">
+<div class="s"><b>Стрижка</b><p>Консультация, мытьё, стрижка и укладка.</p><span>50 BYN</span></div>
+<div class="s"><b>Борода</b><p>Форма, контур, горячее полотенце.</p><span>35 BYN</span></div>
+<div class="s"><b>Камуфляж седины</b><p>Естественный тон за 15 минут.</p><span>40 BYN</span></div>
+<div class="s"><b>Мужской маникюр</b><p>Аккуратно и без покрытия.</p><span>40 BYN</span></div>
+</div></div></section>
+<section><div class="w"><p class="quote">«Хожу третий год. Записываюсь в Telegram за минуту, всегда к одному мастеру».</p><p>Пример отзыва клиента</p></div></section>
+<footer><div class="w"><span>Main · мужской салон · Минск</span><span>t.me/mainsalon</span></div></footer>
+
+</html>
